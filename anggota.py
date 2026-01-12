@@ -1,10 +1,15 @@
 class Anggota:
-    def __init__(self, nama, nim):
-        self.nama = nama
+    def __init__(self, nim, nama):
         self.nim = nim
+        self.nama = nama
 
     def tampilkan(self):
-        print(f"Nama: {self.nama}, NIM: {self.nim}")
+        print(f"NIM  : {self.nim}")
+        print(f"Nama : {self.nama}")
+        print("-" * 30)
 
-anggota1 = Anggota("Deby Ahsan", "230123456")
-anggota1 .tampilkan()
+anggota1 = Anggota("23010101", "Deby Ahsan")
+anggota2 = Anggota("23010102", "Budi Santoso")
+
+anggota1.tampilkan()
+anggota2.tampilkan()
